@@ -1,0 +1,16 @@
+.NavbarItem {
+}
+
+.NavbarItem-title {
+	text-align: center;
+	min-width: 100px;
+	width: auto;
+	padding: 3px;
+	border: 1px solid black;
+	magin-bottom: 0px;
+}
+
+/* Remove the left border of all but the first Navbar-item */
+.NavbarItem:nth-of-type(n+2) {
+	border-left: 0px;
+}

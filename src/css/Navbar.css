@@ -1,0 +1,16 @@
+.Navbar {
+	min-height: 30px;
+	background-color: #8888CC;
+}
+
+.Navbar-table {
+	display: flex;
+	justify-content: flex-end;
+	flex-flow: row wrap;
+	text-align: right;
+	align: right;
+	margin-left: 8%;
+	width: 84%;
+	padding-top: 1px;
+	height: 90%;
+}
