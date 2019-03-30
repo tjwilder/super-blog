@@ -4,8 +4,15 @@
 	background-color: #FF3333;
 	min-width: 100px;
 	margin: 0px;
+  margin-top: -1px;
 }
 
 .Dropdown > ul {
+  list-style-type: none;
+  padding: 0px;
 	margin: 0px;
+}
+
+.Dropdown li {
+  background-color: #33AAAA;
 }

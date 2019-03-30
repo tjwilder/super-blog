@@ -1,21 +1,18 @@
 import React from 'react';
-import NavbarItem from './NavbarItem.js';
-import Dropdown from './Dropdown.js';
+import NavbarItem from '../containers/NavbarItem.js';
 import '../css/Navbar.css';
 
-const Navbar = ({items}) => (
+const Navbar = ({items}) => {
+  return (
     <div className="Navbar">
-        <div className="Navbar-table">
-            <NavbarItem title="Onee">
-                <Dropdown items={['one', 'two']} active={true} />
-            </NavbarItem>
-            <NavbarItem title="TWoople">
-            </NavbarItem>
-            <NavbarItem title="Za Sird Best Guy Ever lol">
-            </NavbarItem>
-        </div>
+      <div className="Navbar-table">
+        {items && items.map((item) => (
+          <NavbarItem key={item.id} {...item} />
+        ))}
+      </div>
     </div>
-);
+  )
+};
 
 
 export default Navbar;

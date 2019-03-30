@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/Dropdown.css';
 
-const Dropdown = (props) => {
-	const {items, active} = props;
-	return (
-		<div className="Dropdown">
-			{active && 
-				<ul className="Dropdown-list">
-					{items.map((item) => {
-						return <li>
-							item
-						</li>
-					})}
-				</ul>
-			}
-		</div>
-	);
-}
+const Dropdown = ({active, children}) => (
+  <div className="Dropdown">
+    {active &&
+        <ul className="Dropdown-list">
+          {children && children.map((item, i) => (
+            <li key={i}>
+              {item}
+            </li>
+          ))}
+        </ul>
+    }
+  </div>
+);
 
 export default Dropdown;
