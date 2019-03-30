@@ -1,5 +1,8 @@
 // TODO: Get real state
 // TODO: Minimize all dropdowns if you click in the body
+// Define the default state
+// All ids should be unique
+// If there is no specific action, then the item is a dropdown
 const defaultState = [
   {
     id: 0,
