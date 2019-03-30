@@ -38,7 +38,7 @@ Commit hash after completed feature (or at end of blog post)
 - Navbar state (with dropdowns)
 - Back and forth of how to structure the things and where to handle the state
 ## References
-- Redux tutorial
+- https://redux.js.org/basics/example
 ## Commit hash
 058ddffb4d13d7a62856daccadb5a96c6fcec189
 
@@ -60,12 +60,19 @@ Commit hash after completed feature (or at end of blog post)
   - Clone repo
   - Install yarn to build
   - `yarn install`, `yarn build`
-  - Run server
+  - Run server (fail)
+  - Port only for https (but server not for https)
+  - Got it working serving non-https over https port using sudo (port 443)
+  - Decided to use tutorial for "local dev certs"
+  - Let's Encrypt
+    - Needed to temporarily allow http traffic to get cert
 ## References
 - Google cloud deploy
 - Express tutorial
 - https://cloud.google.com/solutions/web-serving-overview
 - Setup yarn: https://yarnpkg.com/lang/en/docs/install/#debian-stable
+- https://timonweb.com/posts/running-expressjs-server-over-https/
+- Standalone instructions at: https://certbot.eff.org/lets-encrypt/ubuntubionic-other
 ## Commit hash
 Commit hash after completed feature (or at end of blog post)
 

@@ -1,6 +1,10 @@
 const express = require('express');
 const favicon = require('express-favicon');
+const https = require('https');
 const path = require('path');
+
+const certs = require('./certs.js');
+
 const port = process.env.PORT || 8080;
 const app = express();
 
@@ -19,4 +23,7 @@ app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(port);
+https.createServer(certs, app)
+.listen(port, function () {
+  console.log(`Example app listening on port ${port}! Go to https://localhost:${port}/`)
+})
