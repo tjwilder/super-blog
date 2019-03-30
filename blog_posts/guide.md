@@ -65,7 +65,9 @@ Commit hash after completed feature (or at end of blog post)
   - Got it working serving non-https over https port using sudo (port 443)
   - Decided to use tutorial for "local dev certs"
   - Let's Encrypt
-    - Needed to temporarily allow http traffic to get cert
+    - Needed to allow http traffic to get cert
+  - Then it works, with a very specific command and using sudo
+  - Final requires: git pull, yarn build, sudo node server.js, inline environment commands
 ## References
 - Google cloud deploy
 - Express tutorial

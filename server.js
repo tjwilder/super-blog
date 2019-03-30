@@ -3,6 +3,7 @@ const favicon = require('express-favicon');
 const https = require('https');
 const path = require('path');
 
+// Small utility for loading https certs
 const certs = require('./certs.js');
 
 const port = process.env.PORT || 8080;
@@ -15,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Example of non-standard routing
 app.get('/ping', function (req, res) {
- return res.send('pong');
+  return res.send('pong');
 });
 
 // For any other path, send them to the index
@@ -24,6 +25,6 @@ app.get('/*', function (req, res) {
 });
 
 https.createServer(certs, app)
-.listen(port, function () {
-  console.log(`Example app listening on port ${port}! Go to https://localhost:${port}/`)
-})
+  .listen(port, () => {
+    console.log(`Example app listening on port ${port}! Go to https://localhost:${port}/`)
+  })
