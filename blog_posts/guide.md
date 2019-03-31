@@ -47,7 +47,7 @@ Commit hash after completed feature (or at end of blog post)
 ## Details
 - Madhacks 2019 Shipathon (12 hours, 9am to 9pm)
 - That's when I started THIS document
-- This is a quick-and-dirty version, the next post will expand on plans
+- This is a quick-and-dirty version, soon I'll expand things
 - Getting the server set-up
 - Starting with Express serving stating files
 - Google cloud (reasons)
@@ -75,6 +75,17 @@ Commit hash after completed feature (or at end of blog post)
 - Setup yarn: https://yarnpkg.com/lang/en/docs/install/#debian-stable
 - https://timonweb.com/posts/running-expressjs-server-over-https/
 - Standalone instructions at: https://certbot.eff.org/lets-encrypt/ubuntubionic-other
+## Commit hash
+9b844f5b76c33316a803d2ea27d7165c91e6b445
+
+
+# Shipathon "shipping"
+## Details
+- I want to actually have some kind of body, even if it's mediocre
+- First blog post
+- Yay!
+## References
+- 
 ## Commit hash
 Commit hash after completed feature (or at end of blog post)
 
